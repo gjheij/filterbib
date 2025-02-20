@@ -1,0 +1,3 @@
+# Ignore egg files and directories
+*.egg
+*.egg-info/
