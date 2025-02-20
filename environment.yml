@@ -1,0 +1,13 @@
+name: filterbib
+channels:
+  - conda-forge
+  - defaults
+
+dependencies:
+  - python>=3.9
+  - pybtex
+  - pip
+  - setuptools
+  - wheel
+  - pip:
+      - twine
