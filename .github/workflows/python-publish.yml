@@ -1,4 +1,5 @@
 name: Publish filterbib to PyPI
+name: Publish filterbib to PyPI
 
 on:
   release:
