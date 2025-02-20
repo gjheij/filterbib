@@ -2,7 +2,6 @@
 import sys
 from pybtex.database.input import bibtex
 from pybtex.database.output import bibtex as biboutput
-import time
 
 def clean_bibtex(input_file, output_file, fields_to_remove):
     """Reads a .bib file, removes specified fields, adds journal abbreviations, and writes to a new .bib file."""
