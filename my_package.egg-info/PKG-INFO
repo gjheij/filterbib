@@ -1,0 +1,12 @@
+Metadata-Version: 2.2
+Name: my_package
+Version: 0.1.0
+Summary: A Python package that includes a Python and Bash script to filter particular fields from a bib-file
+Author-email: Jurjen Heij <jurjenheij@gmail.com>
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: pybtex
+
+# filterbib
+
+Package to filter out particular fields from a bib-file (e.g., exported from zotero). Cleans up the file so that only relevant fields are shown in the bibliography.
