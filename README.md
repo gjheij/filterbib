@@ -13,6 +13,38 @@ This will place 2 scripts in the `bin` folder of the current anaconda environmen
 - `read_bib`: python script that uses `pybtex` to do most of the actual filtering.
 
 ## Usage
+
+Just entering `filter_bib` will pull up the help information:
+
+```
+(base) [heij@Jurjens-MacBook filterbib]$ filter_bib
+
+---------------------------------------------------------------------------------------------------
+filter_bib
+
+Filter a bib-file representing a bibliography for particular fields to clean up the file. By default,
+it filters out the following fields:
+
+["abstract","note","file","extra","keywords","copyright","url","doi","urldate","issn","shorttitle",
+"language","pmid"]
+
+This part of the script is shell to deal with the ampersand's in the file ('\&' is not processed well in LaTex, so this should be changed to '\&'). It is very hard to do this
+with expressions used in python. This is mainly important if you're using full journal names, rather than the abbreviations.
+
+Arguments:
+  <input bib>           file to be filtered
+  <clean bib>           cleaned file
+  <fields to remove>    comma-separated list of fields to remove
+
+Example:
+  filter_bib exported_items.bib exported_items_clean.bib
+  filter_bib exported_items.bib exported_items_clean.bib abstract,note,extra
+
+---------------------------------------------------------------------------------------------------------
+
+(base) [heij@Jurjens-MacBook filterbib]$ 
+```
+
 The usage is simple: export a file from Zotero as `bibtex`, which generates a `bib`-file. This file can then be passed to `filter_bib`:
 
 ```bash
