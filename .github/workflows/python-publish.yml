@@ -2,7 +2,7 @@ name: Publish filterbib to PyPI
 
 on:
   release:
-    types: [published]
+    types: [push]
 
 permissions:
   contents: read
