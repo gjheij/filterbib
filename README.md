@@ -1,5 +1,7 @@
 # filterbib
 
+![plot](https://github.com/gjheij/filterbib/blob/main/before_after.png)
+
 Package to filter out particular fields from a bib-file (e.g., exported from zotero). Cleans up the file so that only relevant fields are shown in the bibliography.
 
 ## Installation
